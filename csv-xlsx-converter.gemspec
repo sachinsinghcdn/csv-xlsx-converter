@@ -41,34 +41,34 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://github.com/if1live/csv-xlsx-converter".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.6.11".freeze
+  s.rubygems_version = "3.1.4".freeze
   s.summary = "Convert CSV to Excel xlsx, Excel xlsx to CSV.".freeze
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rubyXL>.freeze, ["~> 3.3"])
-      s.add_development_dependency(%q<bundler>.freeze, ["~> 1.0"])
+      s.add_runtime_dependency(%q<rubyXL>.freeze, ["~> 3.4"])
+      s.add_development_dependency(%q<bundler>.freeze, ["~> 2.2"])
       s.add_development_dependency(%q<rake>.freeze, [">= 0"])
-      s.add_development_dependency(%q<jeweler>.freeze, ["~> 2.0"])
-      s.add_development_dependency(%q<rspec>.freeze, ["~> 3.6"])
-      s.add_development_dependency(%q<rdoc>.freeze, ["~> 5.1"])
+      s.add_development_dependency(%q<jeweler>.freeze, ["~> 2.3"])
+      s.add_development_dependency(%q<rspec>.freeze, ["~> 3.10"])
+      s.add_development_dependency(%q<rdoc>.freeze, ["~> 6.3"])
     else
-      s.add_dependency(%q<rubyXL>.freeze, ["~> 3.3"])
-      s.add_dependency(%q<bundler>.freeze, ["~> 1.0"])
+      s.add_dependency(%q<rubyXL>.freeze, ["~> 3.4"])
+      s.add_dependency(%q<bundler>.freeze, ["~> 2.2"])
       s.add_dependency(%q<rake>.freeze, [">= 0"])
-      s.add_dependency(%q<jeweler>.freeze, ["~> 2.0"])
-      s.add_dependency(%q<rspec>.freeze, ["~> 3.6"])
-      s.add_dependency(%q<rdoc>.freeze, ["~> 5.1"])
+      s.add_dependency(%q<jeweler>.freeze, ["~> 2.3"])
+      s.add_dependency(%q<rspec>.freeze, ["~> 3.10"])
+      s.add_dependency(%q<rdoc>.freeze, ["~> 6.3"])
     end
   else
-    s.add_dependency(%q<rubyXL>.freeze, ["~> 3.3"])
-    s.add_dependency(%q<bundler>.freeze, ["~> 1.0"])
+    s.add_dependency(%q<rubyXL>.freeze, ["~> 3.4"])
+    s.add_dependency(%q<bundler>.freeze, ["~> 2.2"])
     s.add_dependency(%q<rake>.freeze, [">= 0"])
-    s.add_dependency(%q<jeweler>.freeze, ["~> 2.0"])
-    s.add_dependency(%q<rspec>.freeze, ["~> 3.6"])
-    s.add_dependency(%q<rdoc>.freeze, ["~> 5.1"])
+    s.add_dependency(%q<jeweler>.freeze, ["~> 2.3"])
+    s.add_dependency(%q<rspec>.freeze, ["~> 3.10"])
+    s.add_dependency(%q<rdoc>.freeze, ["~> 6.3"])
   end
 end
 

@@ -1,12 +1,11 @@
 source "http://rubygems.org"
 
-gem "rubyXL", "~> 3.3"
+gem 'rubyXL', '~> 3.4', '>= 3.4.18'
 
 group :development do
-  gem "bundler", "~> 1.0"
+  gem 'bundler', '~> 2.1.4'
   gem "rake"
-  gem "jeweler", "~> 2.0"
-  #gem "simplecov", ">= 0"
-  gem "rspec", "~> 3.6"
-  gem "rdoc", "~> 5.1"
+  gem 'jeweler', '~> 2.3', '>= 2.3.9'
+  gem 'rspec', '~> 3.10'
+  gem 'rdoc', '~> 6.3', '>= 6.3.2'
 end
