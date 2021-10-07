@@ -15,9 +15,13 @@ module CsvXlsxConverter
 
       workbook = RubyXL::Workbook.new
       worksheet = workbook[0]
+      if RUBY_VERSION.to_i == 2
+        file_data = CSV.foreach(@input_file,{encoding: 'bom|UTF-8', skip_blanks: true})
+      else
+        file_data = CSV.foreach(@input_file, encoding: 'bom|UTF-8', skip_blanks: true)
+      end
 
-      options = {:encoding => 'bom|UTF-8', :skip_blanks => true}
-      CSV.foreach(@input_file, options).each_with_index do |row, row_idx|
+      file_data.each_with_index do |row, row_idx|
         # http://stackoverflow.com/questions/12407035/ruby-csv-get-current-line-row-number
         row.each_with_index do |item, index|
           worksheet.add_cell row_idx, index, item
